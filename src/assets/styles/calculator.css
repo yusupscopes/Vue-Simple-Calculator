@@ -1,0 +1,149 @@
+#main-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+  padding-bottom: 24px;
+}
+
+#calculator-container {
+  padding: 8px;
+  margin: auto;
+  width: 340px;
+}
+
+#display {
+  resize: none;
+  border: none;
+  text-align: left;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  margin: 16px 16px 10px 10px;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.result-label {
+  resize: none;
+  border: none;
+  text-align: left;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  margin: 16px 16px 10px 10px;
+  max-width: 100%;
+}
+
+.result-history {
+  resize: none;
+  border: none;
+  text-align: right;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin: 16px 16px 10px 10px;
+  max-width: 100%;
+}
+
+.result {
+  resize: none;
+  border: none;
+  text-align: right;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  margin: 16px 16px 10px 10px;
+  max-width: 100%;
+}
+
+#display::-webkit-scrollbar {
+  display: none;
+}
+
+#button-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#top-button-section {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.result-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#log-container {
+  margin: auto;
+  width: 340px;
+  padding-top: 24px;
+}
+
+#log-entries {
+  border: black solid 1px;
+  border-radius: 10px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.log-entry {
+  width: 90%;
+  padding: 0px 0px 0px 16px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.calculator-button {
+  height: 75px;
+  background: #34495e;
+  border: none;
+  color: black;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 27px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 250px;
+  margin: 5px;
+  font-weight: normal;
+}
+
+.calculator-button:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}
+
+.calculator-button:active {
+  filter: brightness(55%);
+  cursor: pointer;
+}
+
+.number-button {
+  background: #def3f4;
+}
+
+.operation-button {
+  background: #fff6db;
+  font-size: 24px;
+}
+
+.operation-button-selected {
+  background: #73d9ab;
+  font-size: 24px;
+}
+
+.function-button {
+  background: #4acc93;
+  font-weight: normal;
+}
+
+@media (min-width: 800px) {
+  #main-container {
+    grid-template-columns: 50% 50%;
+    max-width: 1050px;
+  }
+}
+
+@media (max-width: 800px) {
+  #main-container {
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+  }
+}
